@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+
+<!-- controllers -->
+        <script type="text/javascript" src="src/controllers/categoryController.js"></script>
+        <script type="text/javascript" src="src/controllers/itemController.js"></script>
+
+<!-- directive -->
+        <script type="text/javascript" src="src/directives/itemDecoratorDirective.js"></script>
+    </head>
+
+<!-- Services c'est encore plus genial super -->
+        <script type="text/javascript" src="src/services/itemProvider.js"></script>
+    </head>
+
+
+
+
+    <body ng-app="ModuleApp">
+
+    <div ng-controller="itemListCtrl">   
+        <div ng-repeat="item in items">
+
+        <p decorate-item> {{ item }} </p>
+         {{toto}}
+
+        </div>
+    </div>
+
+  
+    </body>
+</html>
